@@ -46,7 +46,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1>ChatGPT_AI_開發專案🪅️</h1>
-        <h2>Create by Scott</h2>
+        <h2>Created by Scott</h2>
         <div>AI 對話、文本產生平臺</div>
         <div className={styles.mainImageContainer}>
           <Image
