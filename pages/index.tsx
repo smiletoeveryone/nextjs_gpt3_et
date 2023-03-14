@@ -5,6 +5,7 @@ import mainImage from '@/assets/images/lionfb_01.jpg'
 import { Form, Button, Spinner } from 'react-bootstrap'
 import { FormEvent, useState } from 'react'
 import Typewriter from '../components/Typewriter';
+import TextToSpeech from '../components/TextToSpeech';
 
 export default function Home() {
 
@@ -72,7 +73,10 @@ export default function Home() {
         {quoteLoading && <Spinner animation='border' />}
         {quoteLoadingError && "Something went wrong. Please try again."}
         <Typewriter text={quote} />
-      </main>
-    </>
+       </main>
+       <div>
+      <TextToSpeech text={quote} />
+    </div>
+      </>
   )
 }
