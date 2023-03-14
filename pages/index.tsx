@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css'
 import mainImage from '@/assets/images/lionfb_01.jpg'
 import { Form, Button, Spinner } from 'react-bootstrap'
 import { FormEvent, useState } from 'react'
+import Typewriter from '../components/Typewriter';
 
 export default function Home() {
 
@@ -70,7 +71,7 @@ export default function Home() {
         </Form>
         {quoteLoading && <Spinner animation='border' />}
         {quoteLoadingError && "Something went wrong. Please try again."}
-        {quote && <h5>{quote}</h5>}
+        <Typewriter text={quote} />
       </main>
     </>
   )
