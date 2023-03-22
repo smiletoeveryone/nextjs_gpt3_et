@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import Head from "next/head";
 import axios from "axios";
+import { Form, Button, Spinner } from 'react-bootstrap'
 
 const TextToImage = () => {
   const [text, setText] = useState("");
@@ -27,8 +28,19 @@ const TextToImage = () => {
       <div>
         <h1>Text to Image</h1>
         <textarea value={text} onChange={handleTextChange} />
-        <button onClick={handleGenerateImage}>Generate Image</button>
+        <div></div>
+        <button onClick={handleGenerateImage}>Image Generator</button>
         {imageUrl && <img src={imageUrl} alt="Generated Image" />}
+        <div></div>
+        
+        <Button
+            href="/"
+            type="submit"
+            className="mb-3"
+            //disabled={quoteLoading}
+          >
+            回到首頁
+          </Button>
       </div>
     </>
   );

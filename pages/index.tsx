@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         <Form onSubmit={handleSubmit} className={styles.inputForm}>
           <Form.Group className='mb-3' controlId='prompt-input'>
-            <Form.Label>Hi！您好：我是AI助理，歡迎詢問任何問題❗️😋️</Form.Label>
+            <Form.Label>您好：我是AI助理，歡迎詢問任何問題❗️😋️</Form.Label>
             <Form.Control
               name='prompt'
               placeholder='請在此輸入您的問題...'
@@ -75,6 +75,10 @@ export default function Home() {
           <div></div>
           <Button href= "/travel_japanese" type='submit' className='mb-3' disabled={quoteLoading}>
             日文旅遊推薦
+          </Button>
+          <div></div>
+          <Button href= "/text2image" type='submit' className='mb-3' disabled={quoteLoading}>
+            輸入文字產生圖像
           </Button>
           <div>
       <TextToSpeech text={quote} />
