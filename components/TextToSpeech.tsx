@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+
 const TextToSpeech = ({ text }: { text: string }) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
 
@@ -23,7 +24,7 @@ const TextToSpeech = ({ text }: { text: string }) => {
       <button onClick={handleStop} disabled={!isSpeaking}>
         Stop
       </button>
-    </div>
+      </div>
   );
 };
 
