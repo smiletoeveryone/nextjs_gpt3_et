@@ -3,6 +3,7 @@ import Head from "next/head";
 import axios from "axios";
 import { Form, Button, Spinner } from 'react-bootstrap'
 
+
 const TextToImage = () => {
   const [text, setText] = useState("");
   const [imageUrl, setImageUrl] = useState("");
